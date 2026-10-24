@@ -1,0 +1,2186 @@
+[
+ {
+  "id": "S001",
+  "character": "八条",
+  "animated": false,
+  "picture": "趴着大眼\"咪。\"",
+  "meaning": "打招呼/卖萌",
+  "mood": [
+   "打招呼"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S001.png"
+ },
+ {
+  "id": "S002",
+  "character": "八条",
+  "animated": false,
+  "picture": "捧手机脸红冒爱心",
+  "meaning": "看到喜欢的消息",
+  "mood": [
+   "喜欢",
+   "害羞"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S002.png"
+ },
+ {
+  "id": "S003",
+  "character": "八条",
+  "animated": false,
+  "picture": "斜眼吐舌",
+  "meaning": "挑衅/略略略",
+  "mood": [
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S003.png"
+ },
+ {
+  "id": "S004",
+  "character": "八条",
+  "animated": false,
+  "picture": "咬人（\"咬\"）",
+  "meaning": "生气/不爽",
+  "mood": [
+   "生气",
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S004.png"
+ },
+ {
+  "id": "S005",
+  "character": "八条",
+  "animated": false,
+  "picture": "黑脸大眼流汗",
+  "meaning": "心虚/无语",
+  "mood": [
+   "无语",
+   "心虚"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S005.png"
+ },
+ {
+  "id": "S006",
+  "character": "八条",
+  "animated": false,
+  "picture": "抱腿星星眼",
+  "meaning": "求求/讨好",
+  "mood": [
+   "期待",
+   "认错"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S006.png"
+ },
+ {
+  "id": "S007",
+  "character": "八条",
+  "animated": false,
+  "picture": "炸毛冒气",
+  "meaning": "气炸",
+  "mood": [
+   "生气"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S007.png"
+ },
+ {
+  "id": "S008",
+  "character": "八条",
+  "animated": false,
+  "picture": "戴眼镜斜眼看手机",
+  "meaning": "审视/阴阳怪气",
+  "mood": [
+   "生气",
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S008.png"
+ },
+ {
+  "id": "S009",
+  "character": "淑熊",
+  "animated": false,
+  "picture": "爱心背景被戳惊叫",
+  "meaning": "被可爱暴击",
+  "mood": [
+   "喜欢"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S009.png"
+ },
+ {
+  "id": "S010",
+  "character": "八条",
+  "animated": false,
+  "picture": "被手指戳头憋气",
+  "meaning": "被教训/不服",
+  "mood": [
+   "生气"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S010.png"
+ },
+ {
+  "id": "S011",
+  "character": "八条",
+  "animated": false,
+  "picture": "头顶问号",
+  "meaning": "疑惑",
+  "mood": [
+   "疑惑"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S011.png"
+ },
+ {
+  "id": "S012",
+  "character": "八条",
+  "animated": false,
+  "picture": "蹭腿（\"蹭蹭\"）",
+  "meaning": "撒娇",
+  "mood": [
+   "撒娇"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S012.png"
+ },
+ {
+  "id": "S013",
+  "character": "八条",
+  "animated": false,
+  "picture": "阴影里低头眯眼",
+  "meaning": "阴暗/自闭",
+  "mood": [
+   "委屈",
+   "累"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S013.png"
+ },
+ {
+  "id": "S014",
+  "character": "淑熊",
+  "animated": false,
+  "picture": "上吊（套绳）",
+  "meaning": "累死了/不想活了（夸张丧）",
+  "mood": [
+   "累"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S014.png"
+ },
+ {
+  "id": "S015",
+  "character": "八条",
+  "animated": false,
+  "picture": "抱爱心蹭",
+  "meaning": "送爱心",
+  "mood": [
+   "喜欢",
+   "撒娇",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S015.png"
+ },
+ {
+  "id": "S016",
+  "character": "淑熊",
+  "animated": false,
+  "picture": "黑暗里\"恶——\"",
+  "meaning": "恶心/嫌弃",
+  "mood": [
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S016.png"
+ },
+ {
+  "id": "S017",
+  "character": "淑熊",
+  "animated": false,
+  "picture": "跪地爆哭",
+  "meaning": "崩溃",
+  "mood": [
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S017.png"
+ },
+ {
+  "id": "S018",
+  "character": "八条",
+  "animated": false,
+  "picture": "阴影里含泪",
+  "meaning": "委屈",
+  "mood": [
+   "委屈"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S018.png"
+ },
+ {
+  "id": "S019",
+  "character": "八条",
+  "animated": false,
+  "picture": "小步溜走（\"逃走\"）",
+  "meaning": "开溜",
+  "mood": [
+   "拜拜"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S019.png"
+ },
+ {
+  "id": "S020",
+  "character": "八条",
+  "animated": false,
+  "picture": "特写嚎啕大哭",
+  "meaning": "破防",
+  "mood": [
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S020.png"
+ },
+ {
+  "id": "S021",
+  "character": "八条",
+  "animated": false,
+  "picture": "大汗滴黑眼",
+  "meaning": "无语/尴尬",
+  "mood": [
+   "无语"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S021.png"
+ },
+ {
+  "id": "S022",
+  "character": "八条",
+  "animated": false,
+  "picture": "发抖大眼",
+  "meaning": "害怕/紧张",
+  "mood": [
+   "害怕"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S022.png"
+ },
+ {
+  "id": "S023",
+  "character": "八条",
+  "animated": false,
+  "picture": "摇屁股（\"摇摇\"）",
+  "meaning": "开心/调皮",
+  "mood": [
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S023.png"
+ },
+ {
+  "id": "S024",
+  "character": "八条",
+  "animated": false,
+  "picture": "星星眼冒爱心",
+  "meaning": "喜欢你",
+  "mood": [
+   "喜欢",
+   "期待"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S024.png"
+ },
+ {
+  "id": "S025",
+  "character": "八条",
+  "animated": false,
+  "picture": "踩到东西流汗",
+  "meaning": "踩雷/闯祸",
+  "mood": [
+   "凶",
+   "无语",
+   "心虚"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S025.png"
+ },
+ {
+  "id": "S027",
+  "character": "八条",
+  "animated": false,
+  "picture": "黑脸持刀",
+  "meaning": "威胁（玩笑）",
+  "mood": [
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S027.png"
+ },
+ {
+  "id": "S028",
+  "character": "淑熊",
+  "animated": false,
+  "picture": "尖叫\"不——!!!\"",
+  "meaning": "拒绝/崩溃",
+  "mood": [
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S028.png"
+ },
+ {
+  "id": "S029",
+  "character": "八条",
+  "animated": false,
+  "picture": "胡子竖起大眼，呆住",
+  "meaning": "失落了，比较惨",
+  "mood": [
+   "委屈",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S029.png"
+ },
+ {
+  "id": "S030",
+  "character": "八条",
+  "animated": false,
+  "picture": "流口水\"我恨!!!\"",
+  "meaning": "羡慕嫉妒恨",
+  "mood": [
+   "馋"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S030.png"
+ },
+ {
+  "id": "S031",
+  "character": "八条",
+  "animated": false,
+  "picture": "黑屏大眼",
+  "meaning": "呆住/石化",
+  "mood": [
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S031.png"
+ },
+ {
+  "id": "S032",
+  "character": "淑熊",
+  "animated": false,
+  "picture": "大淑熊哭+小淑熊委屈坐",
+  "meaning": "难过",
+  "mood": [
+   "委屈",
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S032.png"
+ },
+ {
+  "id": "S033",
+  "character": "八条",
+  "animated": false,
+  "picture": "背影回头斜眼",
+  "meaning": "冷漠/嫌弃",
+  "mood": [
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S033.png"
+ },
+ {
+  "id": "S034",
+  "character": "八条",
+  "animated": false,
+  "picture": "含泪看着小八条走远",
+  "meaning": "被抛弃/不舍",
+  "mood": [
+   "委屈"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S034.png"
+ },
+ {
+  "id": "S035",
+  "character": "淑熊",
+  "animated": false,
+  "picture": "淋雨低头",
+  "meaning": "丧/emo",
+  "mood": [
+   "累"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S035.png"
+ },
+ {
+  "id": "S036",
+  "character": "八条",
+  "animated": false,
+  "picture": "黑气泡生气",
+  "meaning": "压着火",
+  "mood": [
+   "生气"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S036.png"
+ },
+ {
+  "id": "S037",
+  "character": "八条",
+  "animated": false,
+  "picture": "捂嘴爱心眼",
+  "meaning": "被戳中/好爱",
+  "mood": [
+   "喜欢",
+   "害羞"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S037.png"
+ },
+ {
+  "id": "S038",
+  "character": "八条",
+  "animated": false,
+  "picture": "托腮\"思考…\"",
+  "meaning": "想一想",
+  "mood": [
+   "思考"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S038.png"
+ },
+ {
+  "id": "S039",
+  "character": "八条",
+  "animated": false,
+  "picture": "抱电话含泪",
+  "meaning": "求来电/想你",
+  "mood": [
+   "委屈"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S039.png"
+ },
+ {
+  "id": "S040",
+  "character": "八条",
+  "animated": false,
+  "picture": "粉泡泡捂嘴",
+  "meaning": "害羞/感动",
+  "mood": [
+   "害羞"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S040.png"
+ },
+ {
+  "id": "S041",
+  "character": "同框",
+  "animated": false,
+  "picture": "抱在一起冒爱心",
+  "meaning": "好朋友贴贴",
+  "mood": [
+   "喜欢",
+   "撒娇",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S041.png"
+ },
+ {
+  "id": "S042",
+  "character": "八条",
+  "animated": false,
+  "picture": "灰背景面条泪",
+  "meaning": "心碎/真的会谢",
+  "mood": [
+   "委屈"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S042.png"
+ },
+ {
+  "id": "S043",
+  "character": "淑熊",
+  "animated": false,
+  "picture": "黑暗里被手机光照脸",
+  "meaning": "深夜刷手机刷累了",
+  "mood": [
+   "累"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S043.png"
+ },
+ {
+  "id": "S044",
+  "character": "八条",
+  "animated": false,
+  "picture": "被手捧脸星星眼",
+  "meaning": "被宠",
+  "mood": [
+   "期待",
+   "被宠",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S044.png"
+ },
+ {
+  "id": "S045",
+  "character": "八条",
+  "animated": false,
+  "picture": "残影冲刺含泪",
+  "meaning": "哭着跑来",
+  "mood": [
+   "委屈",
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S045.png"
+ },
+ {
+  "id": "S046",
+  "character": "八条",
+  "animated": false,
+  "picture": "墙后探头",
+  "meaning": "偷看/在吗",
+  "mood": [
+   "打招呼"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S046.png"
+ },
+ {
+  "id": "S047",
+  "character": "八条",
+  "animated": false,
+  "picture": "黄框\"OK\"",
+  "meaning": "类似敬礼的 OK（收到！）",
+  "mood": [
+   "好的"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S047.png"
+ },
+ {
+  "id": "S048",
+  "character": "八条",
+  "animated": false,
+  "picture": "舔手（\"嘬\"）",
+  "meaning": "亲亲/谢谢",
+  "mood": [
+   "喜欢",
+   "谢谢"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S048.png"
+ },
+ {
+  "id": "S049",
+  "character": "八条",
+  "animated": false,
+  "picture": "星星眼发光",
+  "meaning": "期待",
+  "mood": [
+   "期待"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S049.jpg"
+ },
+ {
+  "id": "S050",
+  "character": "八条",
+  "animated": false,
+  "picture": "坏笑",
+  "meaning": "嘿嘿/有坏主意",
+  "mood": [
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S050.jpg"
+ },
+ {
+  "id": "S051",
+  "character": "八条",
+  "animated": false,
+  "picture": "小身体头顶问号",
+  "meaning": "啊？",
+  "mood": [
+   "疑惑"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S051.jpg"
+ },
+ {
+  "id": "S052",
+  "character": "八条",
+  "animated": false,
+  "picture": "圆球胖八条炸毛冒气",
+  "meaning": "生气（吃胖系列）",
+  "mood": [
+   "生气"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S052.jpg"
+ },
+ {
+  "id": "S053",
+  "character": "八条",
+  "animated": false,
+  "picture": "黑底闪电震惊",
+  "meaning": "受到冲击",
+  "mood": [
+   "震惊"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S053.jpg"
+ },
+ {
+  "id": "S054",
+  "character": "八条",
+  "animated": false,
+  "picture": "圆球背影回头",
+  "meaning": "看什么看",
+  "mood": [
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S054.jpg"
+ },
+ {
+  "id": "S055",
+  "character": "八条",
+  "animated": false,
+  "picture": "戴围巾吹泡泡",
+  "meaning": "冬天/发呆",
+  "mood": [
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S055.jpg"
+ },
+ {
+  "id": "S056",
+  "character": "八条",
+  "animated": false,
+  "picture": "头顶感叹号",
+  "meaning": "哦豁，突然发现 / 突然反应过来",
+  "mood": [
+   "震惊"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S056.jpg"
+ },
+ {
+  "id": "S057",
+  "character": "八条",
+  "animated": false,
+  "picture": "凶脸走来",
+  "meaning": "来者不善",
+  "mood": [
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S057.jpg"
+ },
+ {
+  "id": "S058",
+  "character": "八条",
+  "animated": false,
+  "picture": "撅屁股回头",
+  "meaning": "嫌弃/走了",
+  "mood": [
+   "嫌弃",
+   "拜拜"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S058.jpg"
+ },
+ {
+  "id": "S059",
+  "character": "八条",
+  "animated": false,
+  "picture": "屁股+星星",
+  "meaning": "拜拜/溜了",
+  "mood": [
+   "拜拜"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S059.jpg"
+ },
+ {
+  "id": "S060",
+  "character": "同框",
+  "animated": false,
+  "picture": "八条趴淑熊头上哭",
+  "meaning": "求安慰（幼儿园系列）",
+  "mood": [
+   "大哭",
+   "上学"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S060.jpg"
+ },
+ {
+  "id": "S061",
+  "character": "同框",
+  "animated": false,
+  "picture": "淑熊趴八条头上",
+  "meaning": "背书包上学",
+  "mood": [
+   "上学"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S061.jpg"
+ },
+ {
+  "id": "S062",
+  "character": "八条",
+  "animated": false,
+  "picture": "呆脸吐舌",
+  "meaning": "装傻",
+  "mood": [
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S062.jpg"
+ },
+ {
+  "id": "S063",
+  "character": "八条",
+  "animated": false,
+  "picture": "流口水",
+  "meaning": "馋",
+  "mood": [
+   "馋"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S063.jpg"
+ },
+ {
+  "id": "S064",
+  "character": "同框",
+  "animated": false,
+  "picture": "八条贴淑熊（\"贴…\"）",
+  "meaning": "黏人",
+  "mood": [
+   "撒娇",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S064.png"
+ },
+ {
+  "id": "S065",
+  "character": "八条",
+  "animated": false,
+  "picture": "脸红伸手",
+  "meaning": "要亲亲",
+  "mood": [
+   "喜欢",
+   "害羞"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S065.png"
+ },
+ {
+  "id": "S066",
+  "character": "八条",
+  "animated": false,
+  "picture": "扭身（\"粘糊\"）",
+  "meaning": "撒娇黏糊",
+  "mood": [
+   "撒娇"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S066.png"
+ },
+ {
+  "id": "S067",
+  "character": "八条",
+  "animated": false,
+  "picture": "流口水睡觉",
+  "meaning": "睡着了/晚安",
+  "mood": [
+   "睡觉",
+   "馋"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S067.png"
+ },
+ {
+  "id": "S068",
+  "character": "八条",
+  "animated": false,
+  "picture": "举爪\"收到\"",
+  "meaning": "好的收到",
+  "mood": [
+   "好的"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S068.png"
+ },
+ {
+  "id": "S069",
+  "character": "八条",
+  "animated": false,
+  "picture": "被手按头残影",
+  "meaning": "被揉/被打",
+  "mood": [
+   "被宠",
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S069.png"
+ },
+ {
+  "id": "S070",
+  "character": "八条",
+  "animated": false,
+  "picture": "\"手机坏掉了都收不到你的消息了\"",
+  "meaning": "委屈求消息",
+  "mood": [
+   "委屈"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S070.png"
+ },
+ {
+  "id": "S072",
+  "character": "八条",
+  "animated": false,
+  "picture": "大小八条问号",
+  "meaning": "不懂",
+  "mood": [
+   "疑惑"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S072.png"
+ },
+ {
+  "id": "S073",
+  "character": "八条",
+  "animated": false,
+  "picture": "大小八条呆眼",
+  "meaning": "懵（与S072近似）",
+  "mood": [
+   "疑惑",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S073.png"
+ },
+ {
+  "id": "S075",
+  "character": "八条",
+  "animated": false,
+  "picture": "爱心眼含泪",
+  "meaning": "感动哭",
+  "mood": [
+   "喜欢",
+   "委屈",
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S075.png"
+ },
+ {
+  "id": "S076",
+  "character": "八条",
+  "animated": false,
+  "picture": "倒地流泪成河",
+  "meaning": "哭成一滩",
+  "mood": [
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S076.png"
+ },
+ {
+  "id": "S080",
+  "character": "八条",
+  "animated": false,
+  "picture": "实景合成趴桌大眼",
+  "meaning": "乖巧等待",
+  "mood": [
+   "期待",
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S080.png"
+ },
+ {
+  "id": "S081",
+  "character": "八条",
+  "animated": false,
+  "picture": "实景合成抱腿",
+  "meaning": "求带走",
+  "mood": [
+   "撒娇"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S081.png"
+ },
+ {
+  "id": "S082",
+  "character": "八条",
+  "animated": false,
+  "picture": "桌边探头大眼",
+  "meaning": "盯",
+  "mood": [
+   "打招呼",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S082.png"
+ },
+ {
+  "id": "S083",
+  "character": "八条",
+  "animated": false,
+  "picture": "垂眼丧脸",
+  "meaning": "无精打采",
+  "mood": [
+   "累"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S083.png"
+ },
+ {
+  "id": "S084",
+  "character": "八条",
+  "animated": false,
+  "picture": "黑脸\"哼\"",
+  "meaning": "不理你",
+  "mood": [
+   "生气"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S084.png"
+ },
+ {
+  "id": "S085",
+  "character": "八条",
+  "animated": false,
+  "picture": "握拳鼓腮",
+  "meaning": "深入思考，但想不通主人为什么这样做",
+  "mood": [
+   "思考"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S085.png"
+ },
+ {
+  "id": "S086",
+  "character": "八条",
+  "animated": false,
+  "picture": "鼓脸含泪\"哼…\"",
+  "meaning": "生闷气",
+  "mood": [
+   "生气",
+   "委屈"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S086.png"
+ },
+ {
+  "id": "S087",
+  "character": "同框",
+  "animated": false,
+  "picture": "八条歪头靠淑熊",
+  "meaning": "撒娇",
+  "mood": [
+   "撒娇"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S087.png"
+ },
+ {
+  "id": "S088",
+  "character": "八条",
+  "animated": false,
+  "picture": "大小八条瞪眼",
+  "meaning": "震惊（同系列）",
+  "mood": [
+   "震惊"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S088.png"
+ },
+ {
+  "id": "S089",
+  "character": "八条",
+  "animated": false,
+  "picture": "被双手捧脸凶",
+  "meaning": "别碰我",
+  "mood": [
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S089.png"
+ },
+ {
+  "id": "S090",
+  "character": "八条",
+  "animated": false,
+  "picture": "被打头起包含泪",
+  "meaning": "挨揍了",
+  "mood": [
+   "委屈",
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S090.png"
+ },
+ {
+  "id": "S092",
+  "character": "八条",
+  "animated": false,
+  "picture": "\"不对劲\"",
+  "meaning": "发现异常",
+  "mood": [
+   "震惊"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S092.png"
+ },
+ {
+  "id": "S097",
+  "character": "八条",
+  "animated": false,
+  "picture": "\"讨好\"",
+  "meaning": "讨好但是失败了",
+  "mood": [
+   "认错"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S097.png"
+ },
+ {
+  "id": "S098",
+  "character": "八条",
+  "animated": false,
+  "picture": "问号斜眼",
+  "meaning": "质疑",
+  "mood": [
+   "疑惑",
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S098.png"
+ },
+ {
+  "id": "S099",
+  "character": "八条",
+  "animated": false,
+  "picture": "盖被子\"睡了\"",
+  "meaning": "晚安",
+  "mood": [
+   "睡觉"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S099.png"
+ },
+ {
+  "id": "S100",
+  "character": "八条",
+  "animated": false,
+  "picture": "雨中阴沉",
+  "meaning": "郁闷",
+  "mood": [
+   "委屈",
+   "累"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S100.png"
+ },
+ {
+  "id": "S103",
+  "character": "八条",
+  "animated": false,
+  "picture": "被挠下巴开心",
+  "meaning": "好舒服",
+  "mood": [
+   "开心",
+   "被宠"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S103.png"
+ },
+ {
+  "id": "S104",
+  "character": "八条",
+  "animated": false,
+  "picture": "\"踩!\"凶脸",
+  "meaning": "踩你",
+  "mood": [
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S104.png"
+ },
+ {
+  "id": "S106",
+  "character": "八条",
+  "animated": false,
+  "picture": "大眼特写发光",
+  "meaning": "期待/看呆",
+  "mood": [
+   "期待",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S106.png"
+ },
+ {
+  "id": "S107",
+  "character": "八条",
+  "animated": false,
+  "picture": "星星眼",
+  "meaning": "好喜欢",
+  "mood": [
+   "喜欢",
+   "期待"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S107.png"
+ },
+ {
+  "id": "S108",
+  "character": "八条",
+  "animated": false,
+  "picture": "被摸头",
+  "meaning": "被安慰/乖",
+  "mood": [
+   "开心",
+   "被宠",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S108.png"
+ },
+ {
+  "id": "S109",
+  "character": "八条",
+  "animated": false,
+  "picture": "和手击掌",
+  "meaning": "耶/give me five",
+  "mood": [
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S109.png"
+ },
+ {
+  "id": "S110",
+  "character": "八条",
+  "animated": false,
+  "picture": "大爱心捧脸",
+  "meaning": "喜欢你",
+  "mood": [
+   "喜欢",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S110.png"
+ },
+ {
+  "id": "S111",
+  "character": "八条",
+  "animated": false,
+  "picture": "躺枕头玩手机笑",
+  "meaning": "摸鱼/开心刷手机",
+  "mood": [
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S111.png"
+ },
+ {
+  "id": "S115",
+  "character": "八条",
+  "animated": false,
+  "picture": "关在笼子里含泪",
+  "meaning": "坐牢/被关",
+  "mood": [
+   "委屈",
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S115.png"
+ },
+ {
+  "id": "S116",
+  "character": "八条",
+  "animated": false,
+  "picture": "背龟壳凶脸",
+  "meaning": "缩起来/装蟑螂？（对应漫画#218假扮蟑螂吓淑熊）",
+  "mood": [
+   "疑惑",
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S116.png"
+ },
+ {
+  "id": "S117",
+  "character": "八条",
+  "animated": false,
+  "picture": "闭眼微笑",
+  "meaning": "满足",
+  "mood": [
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S117.png"
+ },
+ {
+  "id": "S118",
+  "character": "八条",
+  "animated": false,
+  "picture": "黑脸眯眼",
+  "meaning": "冷漠盯",
+  "mood": [
+   "嫌弃",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S118.png"
+ },
+ {
+  "id": "S119",
+  "character": "八条",
+  "animated": false,
+  "picture": "叼玫瑰",
+  "meaning": "送你花/求爱",
+  "mood": [
+   "喜欢"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S119.png"
+ },
+ {
+  "id": "S120",
+  "character": "八条",
+  "animated": false,
+  "picture": "被手托着",
+  "meaning": "被宠爱",
+  "mood": [
+   "被宠",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S120.png"
+ },
+ {
+  "id": "S121",
+  "character": "八条",
+  "animated": false,
+  "picture": "戴小黄帽穿校服哭",
+  "meaning": "不想上学",
+  "mood": [
+   "大哭",
+   "累",
+   "上学"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S121.png"
+ },
+ {
+  "id": "S122",
+  "character": "八条",
+  "animated": false,
+  "picture": "小黄帽背书包",
+  "meaning": "上学去",
+  "mood": [
+   "上学"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S122.png"
+ },
+ {
+  "id": "S123",
+  "character": "八条",
+  "animated": false,
+  "picture": "圆球趴",
+  "meaning": "胖嘟嘟",
+  "mood": [
+   "开心",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S123.png"
+ },
+ {
+  "id": "S126",
+  "character": "八条",
+  "animated": false,
+  "picture": "侧脸脸红流汗",
+  "meaning": "发烧了",
+  "mood": [
+   "害羞",
+   "无语",
+   "生病"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S126.png"
+ },
+ {
+  "id": "S127",
+  "character": "八条",
+  "animated": false,
+  "picture": "\"认错\"",
+  "meaning": "对不起",
+  "mood": [
+   "认错"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S127.png"
+ },
+ {
+  "id": "S128",
+  "character": "八条",
+  "animated": false,
+  "picture": "比耶",
+  "meaning": "耶",
+  "mood": [
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S128.png"
+ },
+ {
+  "id": "S129",
+  "character": "八条",
+  "animated": false,
+  "picture": "\"嗯？\"",
+  "meaning": "疑问",
+  "mood": [
+   "疑惑"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S129.png"
+ },
+ {
+  "id": "S130",
+  "character": "八条",
+  "animated": false,
+  "picture": "被捏脸",
+  "meaning": "被欺负",
+  "mood": [
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S130.png"
+ },
+ {
+  "id": "S131",
+  "character": "八条",
+  "animated": false,
+  "picture": "被大八条亲额头",
+  "meaning": "被安慰",
+  "mood": [
+   "被宠",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S131.png"
+ },
+ {
+  "id": "S132",
+  "character": "八条",
+  "animated": false,
+  "picture": "被手提起来",
+  "meaning": "被抓住了",
+  "mood": [
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S132.png"
+ },
+ {
+  "id": "S134",
+  "character": "八条",
+  "animated": false,
+  "picture": "头上起包\"呜呜…\"",
+  "meaning": "被打哭",
+  "mood": [
+   "大哭",
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S134.png"
+ },
+ {
+  "id": "S135",
+  "character": "八条",
+  "animated": false,
+  "picture": "倒地\"已关机…\"",
+  "meaning": "累瘫/下线",
+  "mood": [
+   "拜拜",
+   "累"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S135.png"
+ },
+ {
+  "id": "S136",
+  "character": "八条",
+  "animated": false,
+  "picture": "鼓脸憋气发抖",
+  "meaning": "忍住",
+  "mood": [
+   "生气",
+   "害怕"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S136.png"
+ },
+ {
+  "id": "S137",
+  "character": "八条",
+  "animated": false,
+  "picture": "\"略——!!\"吐舌",
+  "meaning": "略略略",
+  "mood": [
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S137.png"
+ },
+ {
+  "id": "S138",
+  "character": "八条",
+  "animated": false,
+  "picture": "守着空碗\"等待\"",
+  "meaning": "等饭/饿了",
+  "mood": [
+   "期待",
+   "馋"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S138.png"
+ },
+ {
+  "id": "S139",
+  "character": "八条",
+  "animated": false,
+  "picture": "\"卖萌\"",
+  "meaning": "求原谅",
+  "mood": [
+   "认错"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S139.png"
+ },
+ {
+  "id": "S140",
+  "character": "八条",
+  "animated": false,
+  "picture": "暗处特写大黑眼",
+  "meaning": "盯",
+  "mood": [
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S140.png"
+ },
+ {
+  "id": "S141",
+  "character": "八条",
+  "animated": false,
+  "picture": "粉背景乖坐",
+  "meaning": "乖巧",
+  "mood": [
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S141.png"
+ },
+ {
+  "id": "S143",
+  "character": "八条",
+  "animated": false,
+  "picture": "凶脸踩东西（与S104同款无字）",
+  "meaning": "",
+  "mood": [
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S143.png"
+ },
+ {
+  "id": "S144",
+  "character": "八条",
+  "animated": false,
+  "picture": "含泪星星眼",
+  "meaning": "感动",
+  "mood": [
+   "期待",
+   "委屈"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S144.png"
+ },
+ {
+  "id": "S145",
+  "character": "八条",
+  "animated": false,
+  "picture": "被红绳拽走凶脸",
+  "meaning": "不想去/被拖走",
+  "mood": [
+   "凶",
+   "累",
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S145.png"
+ },
+ {
+  "id": "S146",
+  "character": "八条",
+  "animated": false,
+  "picture": "头顶光环趴桌流口水",
+  "meaning": "上班升天",
+  "mood": [
+   "累",
+   "馋"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S146.png"
+ },
+ {
+  "id": "S147",
+  "character": "八条",
+  "animated": false,
+  "picture": "蹭电脑（\"蹭\"）",
+  "meaning": "蹭蹭/求关注",
+  "mood": [
+   "撒娇"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S147.png"
+ },
+ {
+  "id": "S148",
+  "character": "八条",
+  "animated": false,
+  "picture": "爱心环绕歪头大眼",
+  "meaning": "好喜欢",
+  "mood": [
+   "喜欢"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S148.png"
+ },
+ {
+  "id": "S150",
+  "character": "八条",
+  "animated": false,
+  "picture": "抱刀残影黑眼",
+  "meaning": "要动手了（玩笑威胁）",
+  "mood": [
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S150.png"
+ },
+ {
+  "id": "S152",
+  "character": "八条",
+  "animated": false,
+  "picture": "圆脸青筋",
+  "meaning": "生气了",
+  "mood": [
+   "生气"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S152.png"
+ },
+ {
+  "id": "S155",
+  "character": "八条",
+  "animated": false,
+  "picture": "阴影里流汗吐舌",
+  "meaning": "尴尬/无话可说",
+  "mood": [
+   "无语"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S155.png"
+ },
+ {
+  "id": "S156",
+  "character": "八条",
+  "animated": false,
+  "picture": "被拖鞋砸",
+  "meaning": "被打",
+  "mood": [
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S156.png"
+ },
+ {
+  "id": "S157",
+  "character": "八条",
+  "animated": false,
+  "picture": "看手机哭成面条泪",
+  "meaning": "看哭了/破防",
+  "mood": [
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S157.png"
+ },
+ {
+  "id": "S158",
+  "character": "八条",
+  "animated": false,
+  "picture": "黑脸看手机\"……\"",
+  "meaning": "无语",
+  "mood": [
+   "无语"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S158.png"
+ },
+ {
+  "id": "S159",
+  "character": "八条",
+  "animated": false,
+  "picture": "屁股朝外趴着",
+  "meaning": "被打爆了",
+  "mood": [
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S159.png"
+ },
+ {
+  "id": "S160",
+  "character": "八条",
+  "animated": false,
+  "picture": "趴地哭成一摊",
+  "meaning": "伤心",
+  "mood": [
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S160.png"
+ },
+ {
+  "id": "S161",
+  "character": "八条",
+  "animated": false,
+  "picture": "被手推开残影大眼",
+  "meaning": "被嫌弃",
+  "mood": [
+   "嫌弃",
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S161.png"
+ },
+ {
+  "id": "S162",
+  "character": "八条",
+  "animated": false,
+  "picture": "被摸头+爱心",
+  "meaning": "被宠/乖",
+  "mood": [
+   "喜欢",
+   "开心",
+   "被宠",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S162.png"
+ },
+ {
+  "id": "S164",
+  "character": "八条",
+  "animated": false,
+  "picture": "红包盖头星星眼",
+  "meaning": "看到红包",
+  "mood": [
+   "期待",
+   "过年"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S164.jpg"
+ },
+ {
+  "id": "S165",
+  "character": "八条",
+  "animated": false,
+  "picture": "叼着红包不撒手",
+  "meaning": "要红包",
+  "mood": [
+   "过年"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S165.jpg"
+ },
+ {
+  "id": "S166",
+  "character": "八条",
+  "animated": false,
+  "picture": "\"九九成稀罕物\"递超大红包",
+  "meaning": "送红包/过年",
+  "mood": [
+   "过年"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S166.jpg"
+ },
+ {
+  "id": "S167",
+  "character": "八条",
+  "animated": false,
+  "picture": "举大爱心",
+  "meaning": "送你爱心",
+  "mood": [
+   "喜欢",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S167.jpg"
+ },
+ {
+  "id": "D001",
+  "character": "八条",
+  "animated": true,
+  "picture": "趴桌边吐舌摇尾+爱心飘",
+  "meaning": "开心/见到你好高兴",
+  "mood": [
+   "打招呼",
+   "喜欢",
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D001.gif"
+ },
+ {
+  "id": "D002",
+  "character": "八条",
+  "animated": true,
+  "picture": "双手戳手指",
+  "meaning": "不好意思",
+  "mood": [
+   "害羞"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D002.gif"
+ },
+ {
+  "id": "D003",
+  "character": "八条",
+  "animated": true,
+  "picture": "被手摸头",
+  "meaning": "被摸摸（乖）",
+  "mood": [
+   "开心",
+   "被宠",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D003.gif"
+ },
+ {
+  "id": "D004",
+  "character": "八条",
+  "animated": true,
+  "picture": "乖坐→转身捂脸+星星",
+  "meaning": "邀功",
+  "mood": [
+   "害羞",
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D004.gif"
+ },
+ {
+  "id": "D005",
+  "character": "八条",
+  "animated": true,
+  "picture": "趴着冒汗滴",
+  "meaning": "紧张/心虚",
+  "mood": [
+   "无语",
+   "心虚",
+   "害怕"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D005.gif"
+ },
+ {
+  "id": "D006",
+  "character": "八条",
+  "animated": true,
+  "picture": "眯眯眼抬手吐舌",
+  "meaning": "开心地打招呼",
+  "mood": [
+   "打招呼",
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D006.gif"
+ },
+ {
+  "id": "D008",
+  "character": "八条",
+  "animated": true,
+  "picture": "呆坐→冒问号",
+  "meaning": "？？？",
+  "mood": [
+   "疑惑",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D008.gif"
+ },
+ {
+  "id": "D009",
+  "character": "八条",
+  "animated": true,
+  "picture": "小跑过来",
+  "meaning": "来啦/冲向你",
+  "mood": [
+   "打招呼"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D009.gif"
+ },
+ {
+  "id": "D010",
+  "character": "八条",
+  "animated": true,
+  "picture": "头顶\"叮\"呆眼",
+  "meaning": "宕机/反应不过来",
+  "mood": [
+   "震惊",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D010.gif"
+ },
+ {
+  "id": "D011",
+  "character": "八条",
+  "animated": true,
+  "picture": "哭成一摊发抖",
+  "meaning": "伤心大哭",
+  "mood": [
+   "大哭",
+   "害怕"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D011.gif"
+ },
+ {
+  "id": "D012",
+  "character": "八条",
+  "animated": true,
+  "picture": "含泪发抖",
+  "meaning": "委屈巴巴",
+  "mood": [
+   "委屈",
+   "害怕"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D012.gif"
+ },
+ {
+  "id": "D014",
+  "character": "八条",
+  "animated": true,
+  "picture": "背影青筋抖尾",
+  "meaning": "生气不理人",
+  "mood": [
+   "生气"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D014.gif"
+ },
+ {
+  "id": "D015",
+  "character": "八条",
+  "animated": true,
+  "picture": "大眼→眯成一条线",
+  "meaning": "斜眼看你/鄙视",
+  "mood": [
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D015.gif"
+ },
+ {
+  "id": "D016",
+  "character": "八条",
+  "animated": true,
+  "picture": "被吊在篮子里+大拇指",
+  "meaning": "点赞（哭着也要点赞）",
+  "mood": [
+   "谢谢",
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D016.gif"
+ },
+ {
+  "id": "D017",
+  "character": "八条",
+  "animated": true,
+  "picture": "呆呆地点头",
+  "meaning": "你在吗？是的，我在",
+  "mood": [
+   "打招呼",
+   "疑惑",
+   "呆",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D017.gif"
+ },
+ {
+  "id": "D018",
+  "character": "八条",
+  "animated": true,
+  "picture": "呆坐→头顶感叹号",
+  "meaning": "突然想起/发现",
+  "mood": [
+   "震惊",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D018.gif"
+ },
+ {
+  "id": "D019",
+  "character": "八条",
+  "animated": true,
+  "picture": "凶眼+怒气线抖动",
+  "meaning": "气到发抖",
+  "mood": [
+   "生气",
+   "凶",
+   "害怕"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D019.gif"
+ },
+ {
+  "id": "D020",
+  "character": "八条",
+  "animated": true,
+  "picture": "回头含泪",
+  "meaning": "心虚，欲言又止",
+  "mood": [
+   "委屈",
+   "心虚"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D020.gif"
+ },
+ {
+  "id": "D021",
+  "character": "八条",
+  "animated": true,
+  "picture": "星星眼抱手",
+  "meaning": "期待/求求",
+  "mood": [
+   "期待"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D021.gif"
+ },
+ {
+  "id": "D022",
+  "character": "八条",
+  "animated": true,
+  "picture": "走路→炸成毛球",
+  "meaning": "炸毛/惊吓",
+  "mood": [
+   "震惊",
+   "生气"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D022.gif"
+ },
+ {
+  "id": "D023",
+  "character": "八条",
+  "animated": true,
+  "picture": "\"感谢\"鞠躬",
+  "meaning": "谢谢",
+  "mood": [
+   "谢谢"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D023.gif"
+ },
+ {
+  "id": "D024",
+  "character": "八条",
+  "animated": true,
+  "picture": "张嘴挠头",
+  "meaning": "没看懂你的意思",
+  "mood": [
+   "疑惑"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D024.gif"
+ },
+ {
+  "id": "D025",
+  "character": "八条",
+  "animated": true,
+  "picture": "凶脸走来（凶脸横走）",
+  "meaning": "来找茬了",
+  "mood": [
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D025.gif"
+ },
+ {
+  "id": "D026",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "捂嘴飞吻冒爱心",
+  "meaning": "亲亲/爱你",
+  "mood": [
+   "喜欢",
+   "害羞"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D026.gif"
+ },
+ {
+  "id": "D027",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "坐着大哭",
+  "meaning": "哇哇哭",
+  "mood": [
+   "大哭"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D027.gif"
+ },
+ {
+  "id": "D028",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "脸红呆坐",
+  "meaning": "发呆",
+  "mood": [
+   "害羞",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D028.gif"
+ },
+ {
+  "id": "D029",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "双手大拇指",
+  "meaning": "点赞/好棒",
+  "mood": [
+   "谢谢"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D029.gif"
+ },
+ {
+  "id": "D030",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "头上起包含泪",
+  "meaning": "被打/委屈",
+  "mood": [
+   "委屈",
+   "挨打"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D030.gif"
+ },
+ {
+  "id": "D031",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "脸黑冒线",
+  "meaning": "累着了，很无力",
+  "mood": [
+   "累"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D031.gif"
+ },
+ {
+  "id": "D032",
+  "character": "同框",
+  "animated": true,
+  "picture": "八条假扮蚊子扑到淑熊头上亲",
+  "meaning": "开玩笑地表达爱意",
+  "mood": [
+   "喜欢"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D032.gif"
+ },
+ {
+  "id": "D033",
+  "character": "同框",
+  "animated": true,
+  "picture": "八条给淑熊捶背",
+  "meaning": "捶背",
+  "mood": [
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D033.gif"
+ },
+ {
+  "id": "D034",
+  "character": "同框",
+  "animated": true,
+  "picture": "搭肩开心冒花",
+  "meaning": "好朋友/开心",
+  "mood": [
+   "开心",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D034.gif"
+ },
+ {
+  "id": "D035",
+  "character": "八条",
+  "animated": true,
+  "picture": "冲出来+\"爱\"",
+  "meaning": "爱你",
+  "mood": [
+   "喜欢"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D035.gif"
+ },
+ {
+  "id": "D036",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "淑熊脸红→伸出大手掌",
+  "meaning": "我不要 / 禁止",
+  "mood": [
+   "害羞",
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D036.gif"
+ },
+ {
+  "id": "D037",
+  "character": "八条",
+  "animated": true,
+  "picture": "大眼特写抖动",
+  "meaning": "呆住了",
+  "mood": [
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D037.gif"
+ },
+ {
+  "id": "D038",
+  "character": "八条",
+  "animated": true,
+  "picture": "趴地流口水+速度线",
+  "meaning": "躺平/累瘫",
+  "mood": [
+   "累",
+   "馋"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D038.gif"
+ },
+ {
+  "id": "D039",
+  "character": "八条",
+  "animated": true,
+  "picture": "血条掉光变红流鼻血",
+  "meaning": "被可爱暴击/心动到不行",
+  "mood": [
+   "喜欢"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D039.gif"
+ },
+ {
+  "id": "D040",
+  "character": "八条",
+  "animated": true,
+  "picture": "坐垫子上斜眼冒泡泡",
+  "meaning": "没睡好，起床气",
+  "mood": [
+   "生气",
+   "嫌弃",
+   "累",
+   "睡觉"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D040.gif"
+ },
+ {
+  "id": "D041",
+  "character": "八条",
+  "animated": true,
+  "picture": "凶脸持刀走来",
+  "meaning": "要动手了（玩笑威胁）",
+  "mood": [
+   "凶"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D041.gif"
+ },
+ {
+  "id": "D042",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "脸红→捧出大爱心",
+  "meaning": "送你爱心",
+  "mood": [
+   "喜欢",
+   "害羞",
+   "安慰",
+   "抱抱",
+   "陪伴"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D042.gif"
+ },
+ {
+  "id": "D043",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "捧脸吐舌扭",
+  "meaning": "嘚瑟/调皮",
+  "mood": [
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D043.gif"
+ },
+ {
+  "id": "D044",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "脸红冒小花",
+  "meaning": "开心/害羞",
+  "mood": [
+   "害羞",
+   "开心"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D044.gif"
+ },
+ {
+  "id": "D045",
+  "character": "八条",
+  "animated": true,
+  "picture": "呆→眯眼→\"好\"",
+  "meaning": "好吧（不情愿答应）",
+  "mood": [
+   "好的",
+   "呆"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D045.gif"
+ },
+ {
+  "id": "D046",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "小淑熊+大手指\"滚\"",
+  "meaning": "滚（开玩笑地赶人）",
+  "mood": [
+   "嫌弃"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D046.gif"
+ },
+ {
+  "id": "D047",
+  "character": "淑熊",
+  "animated": true,
+  "picture": "躺床上脑子一团乱",
+  "meaning": "失眠/想太多",
+  "mood": [
+   "累"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D047.gif"
+ },
+ {
+  "id": "D048",
+  "character": "八条",
+  "animated": true,
+  "picture": "举\"OK\"牌",
+  "meaning": "OK",
+  "mood": [
+   "好的"
+  ],
+  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/D048.gif"
+ }
+]
