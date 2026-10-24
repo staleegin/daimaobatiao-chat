@@ -83,6 +83,6 @@ description: 用「呆猫八条」的脾气聊天，每条回复末尾配一张�
   "picture": "头顶光环趴桌流口水",
   "meaning": "上班升天",
   "mood": ["累"],
-  "url": "https://raw.githubusercontent.com/staleegin/daimaobatiao-chat/main/stickers/S146.png"
+  "url": "https://cdn.jsdelivr.net/gh/staleegin/daimaobatiao-chat@main/stickers/S146.png"
 }
 ```
