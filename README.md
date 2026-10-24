@@ -16,6 +16,7 @@
 | `stickers.json` | 表情索引：编号、角色、画面、意思、情绪标签、图片链接 |
 | `stickers/` | 表情图片，文件名就是编号（S 开头是静态图，D 开头是动图） |
 | `screenshots/` | 各平台部署的实测截图 |
+| `desktop-pet/` | Mac 桌宠：打包好的 App（BatiaoPet.zip）和源码 |
 
 ## 各平台支持情况
 
@@ -130,6 +131,47 @@ https://github.com/staleegin/daimaobatiao-chat
 1. 在客户端里填好 DeepSeek 或 OpenAI 等模型的 API Key。
 2. 新建一个助手或角色，把 `prompt.md` 的全部内容粘贴到「系统提示词」。
 3. 开始聊天。表情图片通过 jsDelivr 链接显示，手机上不出图时多半是网络打不开 jsDelivr，换个网络或检查代理设置。
+
+## Mac 桌宠
+
+一只会在屏幕底部走来走去的八条：会散步、蹦跳、呼吸起伏，可以摸摸、喂小鱼干、拎起来，没人理就自己睡觉。支持 Apple 芯片和 Intel 的 Mac（macOS 12 及以上）。
+
+**下载：** [BatiaoPet.zip](https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip)（约 2MB）
+
+### 打开
+
+1. 解压 `BatiaoPet.zip`，得到 `八条桌宠.app`，建议拖到「应用程序」文件夹。
+2. 双击打开。八条会从屏幕右下方掉下来，落在程序坞上方开始活动。它没有程序坞图标，也没有顶部菜单栏。
+3. 第一次打开如果提示「无法验证开发者」：打开「系统设置 → 隐私与安全性」，往下拉找到「八条桌宠」的提示，点「仍要打开」再确认一次。之后就不会再拦了。
+
+### 玩法
+
+- 单击：摸摸（连着摸太多次它会生气）
+- 双击：喂小鱼干
+- 按住拖动：把它拎起来，松手会掉下去
+- 右键：摸摸、喂小鱼干、睡觉 / 叫醒、待在原地不要乱跑、大小、每小时提醒休息、退出
+
+### 关闭
+
+- 在八条身上**右键 → 退出**。
+- 找不到八条时：打开「活动监视器」搜索 `BatiaoPet` 结束它，或在终端输入 `pkill -x BatiaoPet`。
+
+大小、「待在原地」、提醒休息这些设置会被记住。不会开机自启，需要的话在「系统设置 → 通用 → 登录项」里添加「八条桌宠」。
+
+### 用 Codex 自动安装
+
+在你自己 Mac 上运行的 Codex（命令行或桌面 App，不是云端任务）里发下面这段，它会帮你下载、安装并打开。Claude Code 等能在本机执行命令的工具也一样能用。
+
+```
+请帮我在这台 Mac 上安装「八条桌宠」，依次执行下面的命令，每一步告诉我结果：
+
+curl -L -o /tmp/BatiaoPet.zip https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip
+rm -rf /tmp/BatiaoPet && ditto -x -k /tmp/BatiaoPet.zip /tmp/BatiaoPet
+rm -rf "/Applications/八条桌宠.app"
+mv "/tmp/BatiaoPet/八条桌宠.app" /Applications/
+xattr -dr com.apple.quarantine "/Applications/八条桌宠.app"
+open "/Applications/八条桌宠.app"
+```
 
 ## 怎么判断测试通过
 

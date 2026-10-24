@@ -88,6 +88,19 @@ tr:last-child td{border-bottom:none}
 .author .go{flex:none;font-size:14px;font-weight:700;color:var(--accent);white-space:nowrap}
 .credit{margin-top:18px;font-size:15px;color:var(--soft)}
 .credit a{font-weight:700}
+.pet{display:grid;grid-template-columns:1fr 1.3fr;gap:30px;background:var(--card);border-radius:28px;padding:34px;box-shadow:var(--shadow);align-items:start}
+.pet .stage{background:var(--accent-soft);border-radius:22px;height:300px;position:relative;overflow:hidden}
+.pet .stage img{position:absolute;bottom:18px;width:120px;height:120px;object-fit:contain;animation:stroll 9s ease-in-out infinite alternate}
+.pet .stage img.b{width:96px;height:96px;bottom:18px;animation:breathe 2.4s ease-in-out infinite;left:16px;transform-origin:bottom}
+@keyframes stroll{0%{left:40%;transform:translateY(0)}25%{transform:translateY(-6px)}50%{left:62%;transform:translateY(0)}75%{transform:translateY(-6px)}100%{left:44%;transform:translateY(0)}}
+@keyframes breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(.985,1.035)}}
+.pet h3{margin:4px 0 10px;font-size:22px}
+.pet ul{padding-left:20px;margin:8px 0 14px}
+.pet li{margin:4px 0}
+.pet .actions{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0 6px}
+details.howto{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+details.howto summary{cursor:pointer;font-weight:700}
+@media (max-width:860px){.pet{grid-template-columns:1fr;padding:22px}}
 .download{text-align:center;background:var(--card);border-radius:28px;padding:44px 20px;box-shadow:var(--shadow)}
 .download img{width:120px;height:120px;border-radius:22px}
 .download .actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:18px}
@@ -107,7 +120,7 @@ footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
 <body>
 <nav><div class="wrap">
   <a class="brand" href="#top"><img src="stickers/S001.png" alt="">呆猫八条</a>
-  <div class="links"><a href="#features">能做什么</a><a href="#stickers">表情包</a><a href="#guide">教程</a><a href="#download">下载</a><a href="https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc" target="_blank" rel="noopener">作者抖音</a></div>
+  <div class="links"><a href="#features">能做什么</a><a href="#stickers">表情包</a><a href="#guide">教程</a><a href="#pet">桌宠</a><a href="#download">下载</a><a href="https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc" target="_blank" rel="noopener">作者抖音</a></div>
   <a class="btn primary" style="padding:8px 16px" href="https://github.com/staleegin/daimaobatiao-chat/archive/refs/heads/main.zip">下载</a>
 </div></nav>
 
@@ -119,7 +132,7 @@ footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
       <a class="btn primary" href="https://github.com/staleegin/daimaobatiao-chat/archive/refs/heads/main.zip">⬇ 下载项目包</a>
       <a class="btn ghost" href="#guide">看教程</a>
     </div>
-    <p class="note">支持 Claude · ChatGPT · 豆包 · Codex · 第三方客户端</p>
+    <p class="note">支持 Claude · ChatGPT · 豆包 · Codex · 第三方客户端 · 还有 <a href="#pet">Mac 桌宠</a></p>
     <a class="author" href="https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc" target="_blank" rel="noopener">
       <img src="stickers/S001.png" alt="">
       <span class="who"><small>表情包与角色原作者</small><b>呆猫八条</b> · 抖音号 3086296040</span>
@@ -282,6 +295,51 @@ footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
     <tr><td>用括号或文字描写图片画面</td><td>不通过</td><td>同上</td></tr>
     <tr><td>完全没有表情</td><td>没生效</td><td>检查是否上传 / 安装好，或换一个能力更强的模型</td></tr>
   </table>
+</div></section>
+
+<section id="pet"><div class="wrap">
+  <h2>Mac 桌宠</h2>
+  <p class="sub">让八条住进你的屏幕：会散步、蹦跳、呼吸，可以摸摸、喂小鱼干，没人理就自己睡觉。</p>
+  <div class="pet">
+    <div class="stage" aria-hidden="true">
+      <img class="b" src="stickers/S067.png" alt="">
+      <img src="stickers/D009.gif" alt="">
+    </div>
+    <div>
+      <h3>怎么玩</h3>
+      <ul>
+        <li><b>单击</b>摸摸（连着摸太多次它会生气）</li>
+        <li><b>双击</b>喂小鱼干</li>
+        <li><b>按住拖动</b>把它拎起来，松手会掉下去</li>
+        <li><b>右键</b>：睡觉 / 叫醒、待在原地、大小、每小时提醒休息、<b>退出</b></li>
+      </ul>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip">⬇ 下载桌宠（Mac）</a>
+      </div>
+      <p class="note" style="color:var(--soft);font-size:13px;margin:0">约 2MB · 支持 Apple 芯片和 Intel · macOS 12 及以上</p>
+      <details class="howto" open>
+        <summary>打开和关闭</summary>
+        <ol class="steps">
+          <li>解压得到 <code>八条桌宠.app</code>，拖到「应用程序」文件夹，双击打开。它没有程序坞图标，屏幕上只有八条本身。</li>
+          <li>第一次打开提示「无法验证开发者」时：打开「系统设置 → 隐私与安全性」，找到「八条桌宠」的提示，点「仍要打开」。</li>
+          <li><b>关闭</b>：在八条身上右键 → 退出。找不到它时，在「活动监视器」里搜索 <code>BatiaoPet</code> 结束，或在终端输入 <code>pkill -x BatiaoPet</code>。</li>
+          <li>不会开机自启，需要的话在「系统设置 → 通用 → 登录项」里添加。</li>
+        </ol>
+      </details>
+      <details class="howto">
+        <summary>用 Codex 自动安装</summary>
+        <p style="margin:8px 0">在你自己 Mac 上运行的 Codex（命令行或桌面 App，不是云端任务）里发下面这段，它会帮你下载、安装并打开。Claude Code 也一样能用。</p>
+        <div class="code"><button class="copy">复制</button><pre>请帮我在这台 Mac 上安装「八条桌宠」，依次执行下面的命令，每一步告诉我结果：
+
+curl -L -o /tmp/BatiaoPet.zip https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip
+rm -rf /tmp/BatiaoPet &amp;&amp; ditto -x -k /tmp/BatiaoPet.zip /tmp/BatiaoPet
+rm -rf &quot;/Applications/八条桌宠.app&quot;
+mv &quot;/tmp/BatiaoPet/八条桌宠.app&quot; /Applications/
+xattr -dr com.apple.quarantine &quot;/Applications/八条桌宠.app&quot;
+open &quot;/Applications/八条桌宠.app&quot;</pre></div>
+      </details>
+    </div>
+  </div>
 </div></section>
 
 <section id="download"><div class="wrap">
