@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>呆猫八条 · AI 表情包聊天包</title>
+<meta name="description" content="让 AI 用八条的脾气陪你聊天，每条回复都带一张呆猫八条表情包。支持 Claude、ChatGPT、豆包。">
+<link rel="icon" href="stickers/S001.png">
+<style>
+:root{
+  --bg:#fff6e9; --card:#ffffff; --ink:#3a2e2a; --soft:#8c7a70; --line:#f0e2cf;
+  --accent:#f08a4b; --accent-ink:#ffffff; --accent-soft:#fde3cf; --code:#2d2420; --code-ink:#f7ede4;
+  --shadow:0 10px 30px rgba(120,80,40,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1d1916; --card:#28221e; --ink:#f3e9df; --soft:#b9a89c; --line:#3a312b;
+    --accent:#f59a5e; --accent-ink:#1d1916; --accent-soft:#3d2d22; --code:#14110f; --code-ink:#f3e9df;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:60px}
+nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink);text-decoration:none}
+nav .brand img{width:34px;height:34px;border-radius:9px}
+nav .links{margin-left:auto;display:flex;gap:18px;font-size:15px}
+nav .links a{color:var(--soft);text-decoration:none}
+nav .links a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--accent);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent);background:transparent}
+.hero{padding:70px 0 50px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:56px;line-height:1.15;margin:0 0 10px}
+.hero h1 span{color:var(--accent)}
+.hero p.lead{font-size:20px;color:var(--soft);margin:0 0 28px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero .note{font-size:13px;color:var(--soft);margin-top:14px}
+.hero .pile{position:relative;height:380px}
+.hero .pile img{position:absolute;width:190px;height:190px;border-radius:24px;background:#fff;padding:6px;box-shadow:var(--shadow)}
+.hero .pile img:nth-child(1){left:10%;top:0;transform:rotate(-6deg)}
+.hero .pile img:nth-child(2){right:4%;top:40px;transform:rotate(7deg)}
+.hero .pile img:nth-child(3){left:28%;top:170px;transform:rotate(2deg);z-index:2}
+section{padding:56px 0}
+h2{font-size:34px;margin:0 0 8px}
+.sub{color:var(--soft);margin:0 0 30px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feature{background:var(--card);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.feature img{width:72px;height:72px;border-radius:14px}
+.feature h3{margin:12px 0 4px;font-size:19px}
+.feature p{margin:0;color:var(--soft);font-size:15px}
+.wall{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}
+.wall figure{margin:0;background:#fff;border-radius:16px;padding:5px;box-shadow:var(--shadow);aspect-ratio:1;position:relative;overflow:hidden}
+.wall img{width:100%;height:100%;object-fit:contain;display:block;border-radius:12px}
+.wall figcaption{position:absolute;inset:auto 0 0 0;background:rgba(58,46,42,.82);color:#fff;font-size:12px;padding:4px 6px;text-align:center;opacity:0;transition:opacity .15s}
+.wall figure:hover figcaption{opacity:1}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{border:2px solid var(--line);background:var(--card);color:var(--ink);padding:9px 18px;border-radius:999px;font:inherit;font-weight:600;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.panel{display:none;background:var(--card);border-radius:24px;padding:30px;box-shadow:var(--shadow)}
+.panel.active{display:block}
+.panel h3{margin:0 0 6px;font-size:24px}
+.badge{display:inline-block;font-size:13px;padding:2px 10px;border-radius:999px;background:var(--accent-soft);color:var(--ink);margin-left:8px;vertical-align:middle;font-weight:600}
+ol.steps{padding-left:22px;margin:16px 0}
+ol.steps li{margin:10px 0}
+.code{position:relative;margin:12px 0 18px}
+.code pre{margin:0;background:var(--code);color:var(--code-ink);border-radius:16px;padding:18px 18px 18px;font:14px/1.7 ui-monospace,"SF Mono",Menlo,monospace;white-space:pre-wrap;word-break:break-word;max-height:360px;overflow:auto}
+.copy{position:absolute;top:10px;right:10px;border:none;background:var(--accent);color:var(--accent-ink);font:inherit;font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;cursor:pointer}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:14px}
+.shots img{width:100%;border-radius:14px;box-shadow:var(--shadow);background:#fff}
+.warn{background:var(--accent-soft);border-radius:14px;padding:12px 16px;margin:14px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:15px}
+th{background:var(--accent-soft)}
+tr:last-child td{border-bottom:none}
+.author{display:flex;align-items:center;gap:14px;margin-top:26px;padding:12px 16px 12px 12px;background:var(--card);border:2px solid var(--accent-soft);border-radius:18px;box-shadow:var(--shadow);max-width:460px;text-decoration:none;color:var(--ink);transition:transform .15s,border-color .15s}
+.author:hover{transform:translateY(-2px);border-color:var(--accent)}
+.author img{width:52px;height:52px;border-radius:14px;flex:none;background:#fff}
+.author .who{flex:1;line-height:1.45}
+.author .who small{display:block;color:var(--soft);font-size:13px}
+.author .who b{font-size:17px}
+.author .go{flex:none;font-size:14px;font-weight:700;color:var(--accent);white-space:nowrap}
+.credit{margin-top:18px;font-size:15px;color:var(--soft)}
+.credit a{font-weight:700}
+.download{text-align:center;background:var(--card);border-radius:28px;padding:44px 20px;box-shadow:var(--shadow)}
+.download img{width:120px;height:120px;border-radius:22px}
+.download .actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero h1{font-size:40px}
+  .hero .pile{height:300px}
+  .hero .pile img{width:150px;height:150px}
+  .features{grid-template-columns:repeat(2,1fr)}
+  .wall{grid-template-columns:repeat(4,1fr)}
+  nav .links{display:none}
+  .panel{padding:20px}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#top"><img src="stickers/S001.png" alt="">呆猫八条</a>
+  <div class="links"><a href="#features">能做什么</a><a href="#stickers">表情包</a><a href="#guide">教程</a><a href="#download">下载</a><a href="https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc" target="_blank" rel="noopener">作者抖音</a></div>
+  <a class="btn primary" style="padding:8px 16px" href="https://github.com/staleegin/daimaobatiao-chat/archive/refs/heads/main.zip">下载</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <h1>让 AI 用<span>八条</span>的脾气<br>陪你聊天</h1>
+    <p class="lead">一个技能包：AI 说话变成呆猫八条的样子，每条回复都会带一张八条或淑熊的表情包。</p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/staleegin/daimaobatiao-chat/archive/refs/heads/main.zip">⬇ 下载项目包</a>
+      <a class="btn ghost" href="#guide">看教程</a>
+    </div>
+    <p class="note">支持 Claude · ChatGPT · 豆包 · Codex · 第三方客户端</p>
+    <a class="author" href="https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc" target="_blank" rel="noopener">
+      <img src="stickers/S001.png" alt="">
+      <span class="who"><small>表情包与角色原作者</small><b>呆猫八条</b> · 抖音号 3086296040</span>
+      <span class="go">去抖音关注 →</span>
+    </a>
+  </div>
+  <div class="pile">
+    <img src="stickers/S001.png" alt="八条：咪。">
+    <img src="stickers/S012.png" alt="八条：蹭蹭">
+    <img src="stickers/S167.jpg" alt="八条：送你爱心">
+  </div>
+</div></header>
+
+<section id="features"><div class="wrap">
+  <h2>它能做什么</h2>
+  <p class="sub">装好之后，AI 就会以八条的口吻和你聊天。</p>
+  <div class="features">
+    <div class="feature"><img src="stickers/S024.png" alt=""><h3>187 张表情</h3><p>静态图和动图都有，每张都标好了意思和情绪。</p></div>
+    <div class="feature"><img src="stickers/S068.png" alt=""><h3>每条都带一张</h3><p>按这句话的情绪挑图，开心、生气、委屈都有对应的表情。</p></div>
+    <div class="feature"><img src="stickers/S008.png" alt=""><h3>性格很八条</h3><p>话少、爱开玩笑、有小脾气、会阴阳怪气，也会撒娇。</p></div>
+    <div class="feature"><img src="stickers/S108.png" alt=""><h3>难过时只安慰</h3><p>你心情不好时，它会收起玩笑，只发安慰和抱抱的表情。</p></div>
+  </div>
+</div></section>
+
+<section id="stickers"><div class="wrap">
+  <h2>表情包一览</h2>
+  <p class="sub">这里放了一部分，完整 187 张在项目包里。全部表情出自 <a href="https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc" target="_blank" rel="noopener">呆猫八条的抖音</a>。</p>
+  <div class="wall"><figure><img src="stickers/S001.png" alt="打招呼/卖萌" loading="lazy"><figcaption>打招呼/卖萌</figcaption></figure><figure><img src="stickers/S007.png" alt="气炸" loading="lazy"><figcaption>气炸</figcaption></figure><figure><img src="stickers/S012.png" alt="撒娇" loading="lazy"><figcaption>撒娇</figcaption></figure><figure><img src="stickers/S024.png" alt="喜欢你" loading="lazy"><figcaption>喜欢你</figcaption></figure><figure><img src="stickers/S037.png" alt="被戳中/好爱" loading="lazy"><figcaption>被戳中/好爱</figcaption></figure><figure><img src="stickers/S048.png" alt="亲亲/谢谢" loading="lazy"><figcaption>亲亲/谢谢</figcaption></figure><figure><img src="stickers/S052.jpg" alt="生气（吃胖系列）" loading="lazy"><figcaption>生气（吃胖系列）</figcaption></figure><figure><img src="stickers/S063.jpg" alt="馋" loading="lazy"><figcaption>馋</figcaption></figure><figure><img src="stickers/S068.png" alt="好的收到" loading="lazy"><figcaption>好的收到</figcaption></figure><figure><img src="stickers/S099.png" alt="晚安" loading="lazy"><figcaption>晚安</figcaption></figure><figure><img src="stickers/S103.png" alt="好舒服" loading="lazy"><figcaption>好舒服</figcaption></figure><figure><img src="stickers/S110.png" alt="喜欢你" loading="lazy"><figcaption>喜欢你</figcaption></figure><figure><img src="stickers/S119.png" alt="送你花/求爱" loading="lazy"><figcaption>送你花/求爱</figcaption></figure><figure><img src="stickers/S128.png" alt="耶" loading="lazy"><figcaption>耶</figcaption></figure><figure><img src="stickers/S135.png" alt="累瘫/下线" loading="lazy"><figcaption>累瘫/下线</figcaption></figure><figure><img src="stickers/S137.png" alt="略略略" loading="lazy"><figcaption>略略略</figcaption></figure><figure><img src="stickers/S146.png" alt="上班升天" loading="lazy"><figcaption>上班升天</figcaption></figure><figure><img src="stickers/S152.png" alt="生气了" loading="lazy"><figcaption>生气了</figcaption></figure><figure><img src="stickers/S162.png" alt="被宠/乖" loading="lazy"><figcaption>被宠/乖</figcaption></figure><figure><img src="stickers/S167.jpg" alt="送你爱心" loading="lazy"><figcaption>送你爱心</figcaption></figure><figure><img src="stickers/D001.gif" alt="开心/见到你好高兴" loading="lazy"><figcaption>开心/见到你好高兴</figcaption></figure><figure><img src="stickers/D023.gif" alt="谢谢" loading="lazy"><figcaption>谢谢</figcaption></figure><figure><img src="stickers/D026.gif" alt="亲亲/爱你" loading="lazy"><figcaption>亲亲/爱你</figcaption></figure><figure><img src="stickers/D042.gif" alt="送你爱心" loading="lazy"><figcaption>送你爱心</figcaption></figure></div>
+</div></section>
+
+<section id="guide"><div class="wrap">
+  <h2>使用教程</h2>
+  <p class="sub">选你用的平台，照着做就行。每段要发的话都可以一键复制。</p>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-p="claude">Claude</button>
+    <button class="tab" role="tab" aria-selected="false" data-p="chatgpt">ChatGPT</button>
+    <button class="tab" role="tab" aria-selected="false" data-p="doubao">豆包</button>
+    <button class="tab" role="tab" aria-selected="false" data-p="codex">Codex / Claude Code</button>
+    <button class="tab" role="tab" aria-selected="false" data-p="client">第三方客户端</button>
+  </div>
+
+  <div class="panel active" id="p-claude">
+    <h3>Claude 网页版<span class="badge">网页 + 手机都能发表情</span></h3>
+    <ol class="steps">
+      <li>新开一个对话，把下面这段整段发过去。第一行是仓库链接，Claude 会自动添加仓库。</li>
+      <li>Claude 会读取仓库里的文件，然后用八条的口吻回复，并直接把表情图片发出来。</li>
+      <li>网页版部署好后，手机端也能正常收到表情。</li>
+    </ol>
+    <div class="code"><button class="copy">复制</button><pre>https://github.com/staleegin/daimaobatiao-chat
+请使用「呆猫八条」技能，从现在起用八条的人设和我聊天，一直保持。
+
+规则：
+1. 每条回复都带、且只带一张表情包，放在回复最后。
+2. 直接把技能里 stickers/ 文件夹中对应编号的图片发出来（以图片显示），不要发链接，也不要用文字描述图片画面。
+3. 每张图的意思以 stickers.json 里的 meaning 和 mood 为准，按这条回复的情绪挑图，不要自己猜图片内容，不要连着两条用同一张。
+4. 回复 1–3 句，一般不超过 60 字。会开玩笑、有小脾气、会阴阳怪气，也会撒娇装可爱。
+5. 八条和淑熊都用「它」称呼；淑熊是金丝熊，不是棕熊；八条的 MBTI 是 ENFP。
+6. 我情绪很差或遇到坏事时，收起玩笑只安慰，表情只选「安慰 / 陪伴 / 抱抱」类的。
+
+现在测试：用八条的口吻跟我打个招呼，并发一张表情包。</pre></div>
+    <div class="shots"><img src="screenshots/claude-web.webp" alt="Claude 网页版实测截图" loading="lazy"></div>
+  </div>
+
+  <div class="panel" id="p-chatgpt">
+    <h3>ChatGPT 网页版<span class="badge">手机 App 收不到表情</span></h3>
+    <ol class="steps">
+      <li>新开一个对话，把和 Claude 相同的这段话整段发过去：</li>
+    </ol>
+    <div class="code"><button class="copy">复制</button><pre>https://github.com/staleegin/daimaobatiao-chat
+请使用「呆猫八条」技能，从现在起用八条的人设和我聊天，一直保持。
+
+规则：
+1. 每条回复都带、且只带一张表情包，放在回复最后。
+2. 直接把技能里 stickers/ 文件夹中对应编号的图片发出来（以图片显示），不要发链接，也不要用文字描述图片画面。
+3. 每张图的意思以 stickers.json 里的 meaning 和 mood 为准，按这条回复的情绪挑图，不要自己猜图片内容，不要连着两条用同一张。
+4. 回复 1–3 句，一般不超过 60 字。会开玩笑、有小脾气、会阴阳怪气，也会撒娇装可爱。
+5. 八条和淑熊都用「它」称呼；淑熊是金丝熊，不是棕熊；八条的 MBTI 是 ENFP。
+6. 我情绪很差或遇到坏事时，收起玩笑只安慰，表情只选「安慰 / 陪伴 / 抱抱」类的。
+
+现在测试：用八条的口吻跟我打个招呼，并发一张表情包。</pre></div>
+    <ol class="steps" start="2">
+      <li>如果它回了话但没发图，再发下面这句，让它把技能包放进资料库，之后直接从资料库发图：</li>
+    </ol>
+    <div class="code"><button class="copy">复制</button><pre>把skill包上传到资料库，发送表情包不再从GitHub提取链接，改为读取json定位表情包，从资料库直接发图片给我</pre></div>
+    <div class="warn">ChatGPT <b>手机 App 收不到表情包</b>，请在网页版（电脑或手机浏览器）里聊天。</div>
+    <div class="shots">
+      <img src="screenshots/chatgpt-web-1.png" alt="ChatGPT 网页版：粘贴仓库链接和提示词" loading="lazy">
+      <img src="screenshots/chatgpt-web-2.webp" alt="ChatGPT 网页版：从资料库直接发图" loading="lazy">
+    </div>
+  </div>
+
+  <div class="panel" id="p-doubao">
+    <h3>豆包网页版<span class="badge">网页 + 手机都能发表情</span></h3>
+    <ol class="steps">
+      <li><a href="https://github.com/staleegin/daimaobatiao-chat/archive/refs/heads/main.zip">下载项目包</a>（约 10MB，不用解压）。</li>
+      <li>打开豆包网页版，把顶部的模式从「对话」切到 <b>「工作」</b>。</li>
+      <li>点输入框左下角的 <b>+</b>，把项目包添加进来，然后把下面这段整段发过去：</li>
+    </ol>
+    <div class="code"><button class="copy">复制</button><pre>请按「呆猫八条」项目包（SKILL.md / prompt.md / stickers.json）切换成八条的人设和我聊天，从现在起一直保持。
+
+规则：
+1. 每条回复都带、且只带一张表情包，放在回复最后。
+2. 发表情的方式按顺序选：
+   - 能直接发图片（读取或调用 stickers/ 文件夹、云盘里的图片）时，直接把图片发出来；
+   - 不能发图片时，才输出一行 ![编号](链接)，链接用 stickers.json 或表情清单里的地址。
+   不要只发纯文字链接，不要用括号或文字描述图片画面。
+3. 每张图的意思以 stickers.json（或表情清单）里的 meaning 和 mood 为准，按这条回复的情绪挑图，不要自己猜图片内容，不要连着两条用同一张。
+4. 回复 1–3 句，一般不超过 60 字。会开玩笑、有小脾气、会阴阳怪气，也会撒娇装可爱。
+5. 八条和淑熊都用「它」称呼；淑熊是金丝熊，不是棕熊；八条的 MBTI 是 ENFP。
+6. 我情绪很差或遇到坏事时，收起玩笑只安慰，表情只选「安慰 / 陪伴 / 抱抱」类的。
+
+项目包已上传到云盘。需要发表情包时，按 stickers.json 里的编号去云盘找对应的图片文件，直接发送给我。
+
+现在测试：用八条的口吻跟我打个招呼，并发一张表情包。</pre></div>
+    <ol class="steps" start="4">
+      <li>网页版部署好后，在手机端打开同一个对话也能正常收到表情。</li>
+    </ol>
+    <div class="shots">
+      <img src="screenshots/doubao-web-1.webp" alt="豆包网页版：工作模式，附上项目包" loading="lazy">
+      <img src="screenshots/doubao-web-2.webp" alt="豆包网页版：八条直接发出表情" loading="lazy">
+    </div>
+  </div>
+
+  <div class="panel" id="p-codex">
+    <h3>Codex / Claude Code<span class="badge">安装技能</span></h3>
+    <ol class="steps">
+      <li><a href="https://github.com/staleegin/daimaobatiao-chat/archive/refs/heads/main.zip">下载项目包</a>并解压。</li>
+      <li>把整个文件夹放进技能目录：Claude Code 放到 <code>~/.claude/skills/</code>；Codex 放到 Codex 的技能目录（通常是 <code>~/.codex/skills/</code>），用 Chat 模式聊天。</li>
+      <li><code>SKILL.md</code>、<code>stickers.json</code>、<code>stickers/</code> 要在同一个文件夹里，不要拆开。</li>
+      <li>新开一个对话，发下面这段（第一行的仓库链接可以去掉）：</li>
+    </ol>
+    <div class="code"><button class="copy">复制</button><pre>https://github.com/staleegin/daimaobatiao-chat
+请使用「呆猫八条」技能，从现在起用八条的人设和我聊天，一直保持。
+
+规则：
+1. 每条回复都带、且只带一张表情包，放在回复最后。
+2. 直接把技能里 stickers/ 文件夹中对应编号的图片发出来（以图片显示），不要发链接，也不要用文字描述图片画面。
+3. 每张图的意思以 stickers.json 里的 meaning 和 mood 为准，按这条回复的情绪挑图，不要自己猜图片内容，不要连着两条用同一张。
+4. 回复 1–3 句，一般不超过 60 字。会开玩笑、有小脾气、会阴阳怪气，也会撒娇装可爱。
+5. 八条和淑熊都用「它」称呼；淑熊是金丝熊，不是棕熊；八条的 MBTI 是 ENFP。
+6. 我情绪很差或遇到坏事时，收起玩笑只安慰，表情只选「安慰 / 陪伴 / 抱抱」类的。
+
+现在测试：用八条的口吻跟我打个招呼，并发一张表情包。</pre></div>
+  </div>
+
+  <div class="panel" id="p-client">
+    <h3>第三方客户端<span class="badge">Cherry Studio · LobeChat · ChatBox 等</span></h3>
+    <ol class="steps">
+      <li>在客户端里填好 DeepSeek 或 OpenAI 等模型的 API Key。</li>
+      <li>新建一个助手或角色，把项目包里 <code>prompt.md</code> 的全部内容粘贴到「系统提示词」。</li>
+      <li>开始聊天。表情图片通过 jsDelivr 链接显示，手机上不出图时多半是网络打不开 jsDelivr，换个网络或检查代理设置。</li>
+    </ol>
+  </div>
+
+  <h3 style="margin:40px 0 14px;font-size:22px">怎么判断测试通过</h3>
+  <table>
+    <tr><th>看到的</th><th>结果</th><th>怎么办</th></tr>
+    <tr><td>一句八条口吻的话 + 一张能看到的图片</td><td>通过</td><td>直接开始聊天</td></tr>
+    <tr><td>只有一行链接，或链接显示不出图</td><td>不通过</td><td>回复「不要发链接，直接把对应编号的图片发给我」</td></tr>
+    <tr><td>用括号或文字描写图片画面</td><td>不通过</td><td>同上</td></tr>
+    <tr><td>完全没有表情</td><td>没生效</td><td>检查是否上传 / 安装好，或换一个能力更强的模型</td></tr>
+  </table>
+</div></section>
+
+<section id="download"><div class="wrap">
+  <div class="download">
+    <img src="stickers/S119.png" alt="">
+    <h2>下载项目包</h2>
+    <p class="sub" style="margin-bottom:0">包含技能文件、提示词、表情索引和 187 张表情图片。</p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/staleegin/daimaobatiao-chat/archive/refs/heads/main.zip">⬇ 下载 ZIP</a>
+      <a class="btn ghost" href="https://github.com/staleegin/daimaobatiao-chat">在 GitHub 查看</a>
+    </div>
+    <p class="credit">表情包作者：<a href="https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc" target="_blank" rel="noopener">呆猫八条（抖音）</a>，喜欢八条就去关注它吧</p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p>表情包与角色形象版权归作者 <a href="https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc" target="_blank" rel="noopener">呆猫八条</a>（抖音号 3086296040）所有。欢迎个人聊天使用、分享链接；商用、二次售卖、用于训练 AI 模型等请先联系作者。详见 <a href="https://github.com/staleegin/daimaobatiao-chat/blob/main/LICENSE">LICENSE</a>。</p>
+  <p>八条和淑熊都没有性别，称呼请用「它」或名字。淑熊是金丝熊，不是棕熊。</p>
+</div></footer>
+
+<script>
+document.querySelectorAll('.tab').forEach(function (b) {
+  b.addEventListener('click', function () {
+    document.querySelectorAll('.tab').forEach(function (x) { x.setAttribute('aria-selected', x === b); });
+    document.querySelectorAll('.panel').forEach(function (p) { p.classList.toggle('active', p.id === 'p-' + b.dataset.p); });
+  });
+});
+document.querySelectorAll('.copy').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var text = b.nextElementSibling.textContent;
+    var done = function () { b.textContent = '已复制'; setTimeout(function () { b.textContent = '复制'; }, 1500); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done);
+    } else {
+      var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) {} document.body.removeChild(ta);
+    }
+  });
+});
+</script>
+</body>
+</html>
