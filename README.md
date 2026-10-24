@@ -2,7 +2,8 @@
 
 让你的 AI 用「八条」的脾气聊天：话不多、爱开玩笑、有点小脾气、会阴阳怪气，也会撒娇装可爱，并且每条回复都会配一张八条或淑熊的表情包。
 
-- 作者：呆猫八条（抖音号 3086296040）
+- 🌐 项目网站（介绍、教程、下载）：https://staleegin.github.io/daimaobatiao-chat/
+- 作者：[呆猫八条](https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc)（抖音号 3086296040）
 - 表情包：187 张（静态 141 张、动图 46 张），统一 240×240
 - 角色：八条（银渐层小猫）、淑熊（金丝熊，不是棕熊）
 
