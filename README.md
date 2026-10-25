@@ -118,6 +118,8 @@ https://github.com/staleegin/daimaobatiao-chat
 
 ## Codex / Claude Code（安装技能）
 
+> 🤖 这部分教程由 Claude 编写，还没有逐步实测。遇到问题，把报错或截图发给 Claude，让它帮你解决。
+
 1. 下载项目包并解压，把整个文件夹作为技能（Skill）安装：
    - Claude Code：放到 `~/.claude/skills/`。
    - Codex：放到 Codex 的技能目录（通常是 `~/.codex/skills/`），用 Chat 模式聊天。
@@ -125,6 +127,8 @@ https://github.com/staleegin/daimaobatiao-chat
 3. 新开一个对话，发上面 Claude 网页版那段话（第一行的仓库链接可以去掉）。
 
 ## 第三方客户端（Cherry Studio、LobeChat、ChatBox 等）
+
+> 🤖 这部分教程由 Claude 编写，还没有逐步实测。遇到问题，把报错或截图发给 Claude，让它帮你解决。
 
 这类客户端会把回复里的图片链接直接显示成图片。
 
