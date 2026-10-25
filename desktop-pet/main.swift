@@ -479,6 +479,31 @@ final class Pet: NSObject {
 let resources = Bundle.main.resourceURL ?? URL(fileURLWithPath: ".")
 let library = Library(resources: resources)
 
+// 给 Windows 版用：把桌宠用到的表情全部帧抠好导出成 PNG，外加每帧时长
+// 用法：BatiaoPet --export <Resources目录> <输出目录>
+if let i = CommandLine.arguments.firstIndex(of: "--export"), i + 2 < CommandLine.arguments.count {
+    let res = URL(fileURLWithPath: CommandLine.arguments[i + 1]), out = CommandLine.arguments[i + 2]
+    let lib = Library(resources: res)
+    var groups: [String: [String]] = ["walk": Set_.walk, "idle": Set_.idle, "pet": Set_.pet, "feed": Set_.feed,
+                                      "angry": Set_.angry, "sleep": Set_.sleep, "drag": Set_.drag, "happy": Set_.happy]
+    var delays: [String: [Double]] = [:]
+    for id in Set(groups.values.flatMap { $0 }) {
+        let a = lib.anim(id)
+        let dir = URL(fileURLWithPath: "\(out)/\(id)")
+        try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        for (k, f) in a.frames.enumerated() {
+            let rep = NSBitmapImageRep(cgImage: f)
+            try? rep.representation(using: .png, properties: [:])?.write(to: dir.appendingPathComponent(String(format: "%03d.png", k)))
+        }
+        delays[id] = a.delays
+    }
+    groups["_"] = nil
+    let manifest: [String: Any] = ["groups": groups, "delays": delays]
+    let data = try! JSONSerialization.data(withJSONObject: manifest, options: [.prettyPrinted, .sortedKeys])
+    try! data.write(to: URL(fileURLWithPath: "\(out)/manifest.json"))
+    exit(0)
+}
+
 // 调试：导出抠图效果，检查用
 if let i = CommandLine.arguments.firstIndex(of: "--preview"), i + 2 < CommandLine.arguments.count {
     let res = URL(fileURLWithPath: CommandLine.arguments[i + 1]), out = CommandLine.arguments[i + 2]
