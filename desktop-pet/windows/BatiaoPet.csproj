@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>BatiaoPet</AssemblyName>
+    <RootNamespace>BatiaoPet</RootNamespace>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <Product>八条桌宠</Product>
+    <Version>1.0.2</Version>
+
+    <!-- 打包成自带运行环境的单个 exe，双击就能用 -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 抠好的表情帧（由 Mac 版 BatiaoPet 的 export 模式导出），打进 exe 里 -->
+    <EmbeddedResource Include="assets\**\*" LogicalName="assets/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>
