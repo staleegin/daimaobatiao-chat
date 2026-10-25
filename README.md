@@ -16,7 +16,7 @@
 | `stickers.json` | 表情索引：编号、角色、画面、意思、情绪标签、图片链接 |
 | `stickers/` | 表情图片，文件名就是编号（S 开头是静态图，D 开头是动图） |
 | `screenshots/` | 各平台部署的实测截图 |
-| `desktop-pet/` | Mac 桌宠：打包好的 App（BatiaoPet.zip）和源码 |
+| `desktop-pet/` | 桌宠：Mac 版 App（BatiaoPet.zip）和源码，`windows/` 是 Windows 版源码（exe 在 Releases 里下载） |
 
 ## 各平台支持情况
 
@@ -134,7 +134,7 @@ https://github.com/staleegin/daimaobatiao-chat
 
 ## Mac 桌宠
 
-一只会在屏幕底部走来走去的八条：会散步、蹦跳、呼吸起伏，可以摸摸、喂小鱼干、拎起来，没人理就自己睡觉。支持 Apple 芯片和 Intel 的 Mac（macOS 12 及以上）。
+（Windows 版见下一节）一只会在屏幕底部走来走去的八条：会散步、蹦跳、呼吸起伏，可以摸摸、喂小鱼干、拎起来，没人理就自己睡觉。支持 Apple 芯片和 Intel 的 Mac（macOS 12 及以上）。
 
 **下载：** [BatiaoPet.zip](https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip)（约 2MB）
 
@@ -158,7 +158,7 @@ https://github.com/staleegin/daimaobatiao-chat
 
 大小、「待在原地」、提醒休息这些设置会被记住。不会开机自启，需要的话在「系统设置 → 通用 → 登录项」里添加「八条桌宠」。
 
-### 用 Codex 自动安装
+### 用 Codex 自动安装（Mac）
 
 在你自己 Mac 上运行的 Codex（命令行或桌面 App，不是云端任务）里发下面这段，它会帮你下载、安装并打开。Claude Code 等能在本机执行命令的工具也一样能用。
 
@@ -172,6 +172,26 @@ mv "/tmp/BatiaoPet/八条桌宠.app" /Applications/
 xattr -dr com.apple.quarantine "/Applications/八条桌宠.app"
 open "/Applications/八条桌宠.app"
 ```
+
+## Windows 桌宠
+
+和 Mac 版一样的八条：同样的动作、台词和右键菜单。支持 Windows 10 / 11（64 位）。
+
+**下载：** [BatiaoPet.exe](https://github.com/staleegin/daimaobatiao-chat/releases/latest/download/BatiaoPet.exe)（约 74MB，自带运行环境，不用另外安装任何东西）
+
+### 打开
+
+1. 下载 `BatiaoPet.exe`，放到任意文件夹（比如「文档」），双击打开。八条会从屏幕右下方掉下来，落在任务栏上方开始活动。它没有任务栏图标。
+2. 第一次打开如果弹出蓝色的「Windows 已保护你的电脑」：点「更多信息」→「仍要运行」。之后就不会再拦了。
+
+玩法和 Mac 版相同：单击摸摸、双击喂小鱼干、按住拖动、右键打开菜单。
+
+### 关闭
+
+- 在八条身上**右键 → 退出**。
+- 找不到八条时：打开「任务管理器」（`Ctrl + Shift + Esc`），找到 `BatiaoPet` 结束任务。
+
+设置保存在 `%APPDATA%\BatiaoPet`。想开机自启：按 `Win + R` 输入 `shell:startup` 回车，把 exe 的快捷方式放进打开的文件夹。卸载就删掉 exe 和这个设置文件夹。
 
 ## 怎么判断测试通过
 

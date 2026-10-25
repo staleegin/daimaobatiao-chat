@@ -132,7 +132,7 @@ footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
       <a class="btn primary" href="https://github.com/staleegin/daimaobatiao-chat/archive/refs/heads/main.zip">⬇ 下载项目包</a>
       <a class="btn ghost" href="#guide">看教程</a>
     </div>
-    <p class="note">支持 Claude · ChatGPT · 豆包 · Codex · 第三方客户端 · 还有 <a href="#pet">Mac 桌宠</a></p>
+    <p class="note">支持 Claude · ChatGPT · 豆包 · Codex · 第三方客户端 · 还有 <a href="#pet">Mac / Windows 桌宠</a></p>
     <a class="author" href="https://www.douyin.com/user/MS4wLjABAAAA01xT_MXC_iH4Y29sF9DaeM71Tw3sRAMhluAPI1vgh2Y5Ow8UbEnkxRW9uo9kJ4Mc" target="_blank" rel="noopener">
       <img src="stickers/S001.png" alt="">
       <span class="who"><small>表情包与角色原作者</small><b>呆猫八条</b> · 抖音号 3086296040</span>
@@ -298,7 +298,7 @@ footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
 </div></section>
 
 <section id="pet"><div class="wrap">
-  <h2>Mac 桌宠</h2>
+  <h2>桌宠（Mac / Windows）</h2>
   <p class="sub">让八条住进你的屏幕：会散步、蹦跳、呼吸，可以摸摸、喂小鱼干，没人理就自己睡觉。</p>
   <div class="pet">
     <div class="stage" aria-hidden="true">
@@ -315,10 +315,11 @@ footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
       </ul>
       <div class="actions">
         <a class="btn primary" href="https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip">⬇ 下载桌宠（Mac）</a>
+        <a class="btn ghost" href="https://github.com/staleegin/daimaobatiao-chat/releases/latest/download/BatiaoPet.exe">⬇ 下载桌宠（Windows）</a>
       </div>
-      <p class="note" style="color:var(--soft);font-size:13px;margin:0">约 2MB · 支持 Apple 芯片和 Intel · macOS 12 及以上</p>
+      <p class="note" style="color:var(--soft);font-size:13px;margin:0">Mac：约 2MB · 支持 Apple 芯片和 Intel · macOS 12 及以上<br>Windows：约 74MB（自带运行环境，双击就能用）· Windows 10 / 11 64 位</p>
       <details class="howto" open>
-        <summary>打开和关闭</summary>
+        <summary>Mac：打开和关闭</summary>
         <ol class="steps">
           <li>解压得到 <code>八条桌宠.app</code>，拖到「应用程序」文件夹，双击打开。它没有程序坞图标，屏幕上只有八条本身。</li>
           <li>第一次打开提示「无法验证开发者」时：打开「系统设置 → 隐私与安全性」，找到「八条桌宠」的提示，点「仍要打开」。</li>
@@ -327,7 +328,17 @@ footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
         </ol>
       </details>
       <details class="howto">
-        <summary>用 Codex 自动安装</summary>
+        <summary>Windows：打开和关闭</summary>
+        <ol class="steps">
+          <li>下载 <code>BatiaoPet.exe</code>，放到任意文件夹（比如「文档」），双击打开。它没有任务栏图标，屏幕上只有八条本身，会落在任务栏上方活动。</li>
+          <li>第一次打开弹出蓝色的「Windows 已保护你的电脑」时：点「更多信息」→「仍要运行」。</li>
+          <li><b>关闭</b>：在八条身上右键 → 退出。找不到它时，打开「任务管理器」，找到 <code>BatiaoPet</code> 结束任务。</li>
+          <li>想开机自启：按 <code>Win + R</code>，输入 <code>shell:startup</code> 回车，把 exe 的快捷方式放进打开的文件夹。</li>
+          <li>设置保存在 <code>%APPDATA%\BatiaoPet</code>，删掉 exe 和这个文件夹就卸载干净了。</li>
+        </ol>
+      </details>
+      <details class="howto">
+        <summary>Mac：用 Codex 自动安装</summary>
         <p style="margin:8px 0">在你自己 Mac 上运行的 Codex（命令行或桌面 App，不是云端任务）里发下面这段，它会帮你下载、安装并打开。Claude Code 也一样能用。</p>
         <div class="code"><button class="copy">复制</button><pre>请帮我在这台 Mac 上安装「八条桌宠」，依次执行下面的命令，每一步告诉我结果：
 
