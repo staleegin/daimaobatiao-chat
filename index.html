@@ -314,14 +314,14 @@ footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
         <li><b>右键</b>：睡觉 / 叫醒、待在原地、大小、每小时提醒休息、<b>退出</b></li>
       </ul>
       <div class="actions">
-        <a class="btn primary" href="https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip">⬇ 下载桌宠（Mac）</a>
+        <a class="btn primary" href="https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.dmg">⬇ 下载桌宠（Mac）</a>
         <a class="btn ghost" href="https://github.com/staleegin/daimaobatiao-chat/releases/latest/download/BatiaoPet.exe">⬇ 下载桌宠（Windows）</a>
       </div>
-      <p class="note" style="color:var(--soft);font-size:13px;margin:0">Mac：约 2MB · 支持 Apple 芯片和 Intel · macOS 12 及以上<br>Windows：约 74MB（自带运行环境，双击就能用）· Windows 10 / 11 64 位</p>
+      <p class="note" style="color:var(--soft);font-size:13px;margin:0">Mac：约 2.5MB · 支持 Apple 芯片和 Intel · macOS 12 及以上<br>Windows：约 74MB（自带运行环境，双击就能用）· Windows 10 / 11 64 位</p>
       <details class="howto" open>
         <summary>Mac：打开和关闭</summary>
         <ol class="steps">
-          <li>解压得到 <code>八条桌宠.app</code>，拖到「应用程序」文件夹，双击打开。它没有程序坞图标，屏幕上只有八条本身。</li>
+          <li>双击下载好的 <code>BatiaoPet.dmg</code>，在弹出的窗口里把「八条桌宠」拖到旁边的「应用程序」文件夹，再从「应用程序」里双击打开。它没有程序坞图标，屏幕上只有八条本身。</li>
           <li>第一次打开提示「无法验证开发者」时：打开「系统设置 → 隐私与安全性」，找到「八条桌宠」的提示，点「仍要打开」。</li>
           <li><b>关闭</b>：在八条身上右键 → 退出。找不到它时，在「活动监视器」里搜索 <code>BatiaoPet</code> 结束，或在终端输入 <code>pkill -x BatiaoPet</code>。</li>
           <li>不会开机自启，需要的话在「系统设置 → 通用 → 登录项」里添加。</li>
@@ -342,10 +342,11 @@ footer{padding:40px 0 60px;color:var(--soft);font-size:14px;text-align:center}
         <p style="margin:8px 0">在你自己 Mac 上运行的 Codex（命令行或桌面 App，不是云端任务）里发下面这段，它会帮你下载、安装并打开。Claude Code 也一样能用。</p>
         <div class="code"><button class="copy">复制</button><pre>请帮我在这台 Mac 上安装「八条桌宠」，依次执行下面的命令，每一步告诉我结果：
 
-curl -L -o /tmp/BatiaoPet.zip https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip
-rm -rf /tmp/BatiaoPet &amp;&amp; ditto -x -k /tmp/BatiaoPet.zip /tmp/BatiaoPet
+curl -L -o /tmp/BatiaoPet.dmg https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.dmg
+hdiutil attach -nobrowse -readonly /tmp/BatiaoPet.dmg
 rm -rf &quot;/Applications/八条桌宠.app&quot;
-mv &quot;/tmp/BatiaoPet/八条桌宠.app&quot; /Applications/
+cp -R &quot;/Volumes/八条桌宠/八条桌宠.app&quot; /Applications/
+hdiutil detach &quot;/Volumes/八条桌宠&quot;
 xattr -dr com.apple.quarantine &quot;/Applications/八条桌宠.app&quot;
 open &quot;/Applications/八条桌宠.app&quot;</pre></div>
       </details>

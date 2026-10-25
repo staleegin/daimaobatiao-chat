@@ -16,7 +16,7 @@
 | `stickers.json` | 表情索引：编号、角色、画面、意思、情绪标签、图片链接 |
 | `stickers/` | 表情图片，文件名就是编号（S 开头是静态图，D 开头是动图） |
 | `screenshots/` | 各平台部署的实测截图 |
-| `desktop-pet/` | 桌宠：Mac 版 App（BatiaoPet.zip）和源码，`windows/` 是 Windows 版源码（exe 在 Releases 里下载） |
+| `desktop-pet/` | 桌宠：Mac 版安装包（BatiaoPet.dmg）和源码，`windows/` 是 Windows 版源码（exe 在 Releases 里下载） |
 
 ## 各平台支持情况
 
@@ -136,12 +136,12 @@ https://github.com/staleegin/daimaobatiao-chat
 
 （Windows 版见下一节）一只会在屏幕底部走来走去的八条：会散步、蹦跳、呼吸起伏，可以摸摸、喂小鱼干、拎起来，没人理就自己睡觉。支持 Apple 芯片和 Intel 的 Mac（macOS 12 及以上）。
 
-**下载：** [BatiaoPet.zip](https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip)（约 2MB）
+**下载：** [BatiaoPet.dmg](https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.dmg)（约 2.5MB）
 
 ### 打开
 
-1. 解压 `BatiaoPet.zip`，得到 `八条桌宠.app`，建议拖到「应用程序」文件夹。
-2. 双击打开。八条会从屏幕右下方掉下来，落在程序坞上方开始活动。它没有程序坞图标，也没有顶部菜单栏。
+1. 双击下载好的 `BatiaoPet.dmg`，在弹出的窗口里把「八条桌宠」拖到旁边的「应用程序」文件夹。
+2. 在「应用程序」里双击「八条桌宠」打开。八条会从屏幕右下方掉下来，落在程序坞上方开始活动。它没有程序坞图标，也没有顶部菜单栏。
 3. 第一次打开如果提示「无法验证开发者」：打开「系统设置 → 隐私与安全性」，往下拉找到「八条桌宠」的提示，点「仍要打开」再确认一次。之后就不会再拦了。
 
 ### 玩法
@@ -165,10 +165,11 @@ https://github.com/staleegin/daimaobatiao-chat
 ```
 请帮我在这台 Mac 上安装「八条桌宠」，依次执行下面的命令，每一步告诉我结果：
 
-curl -L -o /tmp/BatiaoPet.zip https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.zip
-rm -rf /tmp/BatiaoPet && ditto -x -k /tmp/BatiaoPet.zip /tmp/BatiaoPet
+curl -L -o /tmp/BatiaoPet.dmg https://github.com/staleegin/daimaobatiao-chat/raw/main/desktop-pet/BatiaoPet.dmg
+hdiutil attach -nobrowse -readonly /tmp/BatiaoPet.dmg
 rm -rf "/Applications/八条桌宠.app"
-mv "/tmp/BatiaoPet/八条桌宠.app" /Applications/
+cp -R "/Volumes/八条桌宠/八条桌宠.app" /Applications/
+hdiutil detach "/Volumes/八条桌宠"
 xattr -dr com.apple.quarantine "/Applications/八条桌宠.app"
 open "/Applications/八条桌宠.app"
 ```
