@@ -6,6 +6,10 @@
 <title>呆猫八条 · AI 表情包聊天包</title>
 <meta name="description" content="让 AI 用八条的脾气陪你聊天，每条回复都带一张呆猫八条表情包。支持 Claude、ChatGPT、豆包。">
 <link rel="icon" href="stickers/S001.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- 谷歌字体不阻塞页面：打不开时直接用系统字体 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" media="print" onload="this.media='all'">
 <style>
 :root{
   --bg:#fff6e9; --card:#ffffff; --ink:#3a2e2a; --soft:#8c7a70; --line:#f0e2cf;
@@ -21,7 +25,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Noto Sans SC",-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
 a{color:var(--accent)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
