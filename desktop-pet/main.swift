@@ -105,8 +105,8 @@ final class Library {
 
 enum Set_ {
     static let walk = ["D009", "D025"]
-    // D002（搓手）的手是开口线条画的，抠图后手中间会透出背景，所以不用
-    static let idle = ["D008", "D024", "D021", "D006", "D017", "D018"]
+    // D002（搓手）用的是作者修补过的版本（desktop-pet/fixed/D002.gif），原图的手中间会透明
+    static let idle = ["D008", "D024", "D021", "D006", "D017", "D018", "D002"]
     static let pet = ["D004", "D021", "D003"]
     static let feed = ["D001"]
     static let angry = ["D019", "D014"]
